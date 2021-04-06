@@ -1,0 +1,89 @@
+/* TERMINAL */
+.terminal {
+  position: relative;
+  font-family: monospace;
+  font-weight: bold;
+  padding-left: 0.25rem;
+  padding-top: 0.5rem;
+  overflow-y: scroll;
+}
+
+/* .terminal:focus {
+  outline: none;
+} */
+
+.terminal > p {
+  min-height: 1.25rem;
+  font-size: 1.25rem;
+  margin: 0;
+  letter-spacing: 0.03em;
+  line-height: 1;
+}
+
+.terminal > p:last-of-type {
+  display: contents;
+}
+
+.terminal > span {
+  width: 1rem;
+  height: 1.25rem;
+  /* line-height: 1; */
+  background: rgb(0, 0, 0);
+  position: absolute;
+  animation: flash 1s infinite;
+}
+
+@keyframes flash {
+  0% {
+    visibility: visible;
+  }
+
+  49% {
+    visibility: visible;
+  }
+
+  50% {
+    visibility: hidden;
+  }
+
+  99% {
+    visibility: hidden;
+  }
+
+  100% {
+    visibility: visible;
+  }
+}
+
+/* TABLE */
+.table {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.table thead th,
+.table thead td,
+.table tbody th,
+.table tbody td {
+  padding: 0.2rem 0.3rem 0.3rem;
+}
+
+/* CHART */
+.chart {
+  height: 100%;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.menu .button {
+  padding: 0.2rem 0.8rem;
+  /* font-size: 1.3rem; */
+  /* text-align: center; */
+}
+
+.menu .button p {
+  margin-bottom: 0;
+  /* padding: 0rem 0.4rem; */
+  /* font-size: 1.3rem; */
+  /* text-align: center; */
+}
